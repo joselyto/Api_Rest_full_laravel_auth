@@ -90,7 +90,8 @@ class AuthController extends Controller
             "message"=>"Deconnexion effectuer"
         ], 200);
     }
-    public function user(){
+    public function user_detail(){
+  
         return response()->json([
             'user'=>auth()->user()
         ], 200);
